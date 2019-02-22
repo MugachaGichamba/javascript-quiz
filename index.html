@@ -2,19 +2,20 @@
 <html lang="en" dir="ltr">
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
     <meta charset="utf-8">
     <title>Html Quiz</title>
 
   </head>
   <body>
     <div class="container">
-      <h1>Html Quiz</h1>
+      <h1>Javascript Quiz</h1>
 
         <div class="question_container">
-          <h3>1. Inside which html element do we put the Javascript?</h3>
+          <h3>1. Inside which html element do we put the Javascript? <span id="marks">(2 Marks)</span> </h3>
           <div class="radio">
             <label>
-              <input type="radio" name="question1" value="2" checked>
+              <input type="radio" name="question1" value="0" checked>
                &ltjavascript&gt
             </label>
           </div>
@@ -38,7 +39,7 @@
           </div>
         </div>
         <div class="question_container">
-          <h3>2. The external JavaScript file must contain the &ltscript&gt tag:</h3>
+          <h3>2. The external JavaScript file must contain the &ltscript&gt tag: <span id="marks">(1 Mark)</span> </h3>
           <div class="radio">
             <label>
               <input type="radio" name="question2" value="0" >
@@ -53,7 +54,7 @@
           </div>
         </div>
         <div class="question_container">
-          <h3>3. How do you create a function in JavaScript?</h3>
+          <h3>3. How do you create a function in JavaScript? <span id="marks">(3 Marks)</span></h3>
           <div class="radio">
             <label>
               <input type="radio" name="question3" value="0" >
@@ -75,7 +76,7 @@
         </div>
 
         <div class="question_container">
-          <h3>4. How do you write "Hello World" in an alert box?:</h3>
+          <h3>4. How do you write "Hello World" in an alert box?: <span id="marks">(2 Marks)</span> </h3>
           <div class="radio">
             <label>
               <input type="radio" name="question4" value="0" >
@@ -102,7 +103,7 @@
           </div>
     </div>
     <div class="question_container">
-      <h3>5. How to write an IF statement in JavaScript?</h3>
+      <h3>5. How to write an IF statement in JavaScript? <span id="marks">(2 Marks)</span></h3>
       <div class="radio">
         <label>
           <input type="radio" name="question5" value="0" checked>
@@ -128,7 +129,7 @@
         </label>
       </div>
 </div>
-  <button type="button" name="button" id="submit">Submit</button>
+  <button type="button" class="btn btn-success" name="button" id="submit">Submit</button>
   </div>
     <script
   src="https://code.jquery.com/jquery-3.3.1.js"
