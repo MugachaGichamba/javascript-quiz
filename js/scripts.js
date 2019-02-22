@@ -5,20 +5,21 @@ $(document).ready(function(){
         count = parseInt(count);
         total += parseInt($("input:radio[name=question" + count +"]:checked").val());
       }
-  $("h1").before("<h2>Your score is: " +total + "<h2> ");
-  console.log(calculatePercentage(total));
+  $("h1").after("<h2>Your score is: " +total + "<h2> ");
+  $("h1").after("<h2>" + calculatePercentage(total) + "<h2>");
+   $("html, body").animate({ scrollTop: 0 }, "slow");
   });
 });
 
 function calculatePercentage(total){
   var percentageScore =  (total /10) * 100;
-  console.log(percentageScore);
+  percentString = percentageScore.toString() + "% means: ";
   if (percentageScore > 80){
-    return "You have excellently passed";
+    return percentString + "You have excellently passed";
 } else if (percentageScore >= 50 && percentageScore > 80){
-return "You have fairly passed";
+return percentString+  "You have fairly passed";
 }
 else {
-  return "You need to retake the test";
+  return percentString +  "You need to retake the test";
 }
 }
