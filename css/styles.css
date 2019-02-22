@@ -32,3 +32,14 @@ background-color: #eee;
   margin-bottom: 30px;
   margin-left:35%
 }
+
+.score {
+  color: red;
+  text-align: center;
+
+  animation-name: example;
+  animation-duration: 5s;
+}
+@keyframes example {
+  from {color: red;}
+  to {color: #3CB371;}

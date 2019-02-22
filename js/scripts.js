@@ -7,7 +7,9 @@ $(document).ready(function(){
       }
   $("h1").after("<h2>Your score is: " +total + "<h2> ");
   $("h1").after("<h2>" + calculatePercentage(total) + "<h2>");
+
    $("html, body").animate({ scrollTop: 0 }, "slow");
+   $('h2').addClass("score");
   });
 });
 
