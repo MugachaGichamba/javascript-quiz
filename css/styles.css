@@ -1,0 +1,10 @@
+h1 {
+  text-align: center;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  color: #3CB371;
+  font-size: 60px;
+  border: 2px solid grey;
+  background-image: url("../images/grey.jpg");
+  border-radius: 15%;
+
+}
