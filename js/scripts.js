@@ -2,8 +2,12 @@
 
 
 var calculate_score = function(){
-  counter = "1";
-  var question1 = $("input:radio[name=question" + counter +"]:checked").val();
-  console.log(question1);
+  total = 0
+  for(count = 1; count <= 5; count++){
+    count = parseInt(count);
+    total += parseInt($("input:radio[name=question" + count +"]:checked").val());
+    console.log(total);
+  }
+  console.log(total);
 }
 calculate_score();
